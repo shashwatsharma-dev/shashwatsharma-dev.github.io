@@ -17,7 +17,7 @@ const greeting = {
   username: "Shashwat Sharma",
   title: "Hi, I'm Shashwat",
   subTitle: emoji(
-    "A Solution Architect with 13+ years of experience designing enterprise Generative AI, Agentic AI, and automation solutions 🚀"
+    "A Solution Architect with 14+ years of experience designing enterprise Generative AI, Agentic AI, and automation solutions 🚀"
   ),
   resumeLink: "", // add a hosted Google Drive link to your resume PDF here
   displayGreeting: true
@@ -26,7 +26,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/shashwatsharma-dev",
   linkedin: "https://www.linkedin.com/in/Shashwat-Sharma-genAI-architect",
-  gmail: "shashwat.shaks@gmail.com",
+  gmail: "sharma.shashwat.official@gmail.com",
   display: true
 };
 
@@ -224,7 +224,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Open to discussing Agentic AI, RAG architecture, or enterprise automation projects",
   number: "+91-8052344445",
-  email_address: "shashwat.shaks@gmail.com"
+  email_address: "sharma.shashwat.official@gmail.com",
+  display: true
 };
 
 const twitterDetails = {
