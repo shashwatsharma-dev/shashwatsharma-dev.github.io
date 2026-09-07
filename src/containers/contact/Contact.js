@@ -14,6 +14,7 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
+            <span className="contact-tag">Open to opportunities</span>
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
@@ -24,6 +25,47 @@ export default function Contact() {
             >
               {contactInfo.subtitle}
             </p>
+            {contactInfo.availabilityLine && (
+              <p
+                className={
+                  isDark
+                    ? "dark-mode contact-subtitle"
+                    : "subTitle contact-subtitle"
+                }
+              >
+                {contactInfo.availabilityLine}
+              </p>
+            )}
+
+            <div className="contact-buttons-row">
+              {contactInfo.resumeLink && (
+                <a
+                  className="contact-action-button"
+                  href={contactInfo.resumeLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Download resume
+                </a>
+              )}
+              {contactInfo.scheduleLink && (
+                <a
+                  className="contact-action-button"
+                  href={contactInfo.scheduleLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Schedule a call
+                </a>
+              )}
+              <a
+                className="contact-action-button"
+                href={"mailto:" + contactInfo.email_address}
+              >
+                Email me
+              </a>
+            </div>
+
             <div
               className={
                 isDark ? "dark-mode contact-text-div" : "contact-text-div"
@@ -41,27 +83,18 @@ export default function Contact() {
                   <br />
                 </>
               )}
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
               <SocialMedia />
             </div>
           </div>
-          <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
-            ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
-            )}
-          </div>
+<div className="contact-image-div">
+  <div className="contact-photo-wrapper">
+    <img
+      alt="Shashwat Sharma"
+      src={require("../../assets/images/shash.jpg")}
+      className="contact-profile-photo"
+    />
+  </div>
+</div>
         </div>
       </div>
     </Fade>

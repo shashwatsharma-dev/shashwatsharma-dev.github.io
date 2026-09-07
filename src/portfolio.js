@@ -79,42 +79,44 @@ const workExperiences = {
   display: true,
   experience: [
     {
-      role: "Solution Architect / Product Manager",
       company: "Tata Consultancy Services Limited",
-       companylogo: require("./assets/images/tcs-light-logo.png"), // add your own logo file, then uncomment
-      date: "Nov 2017 – Present",
-      desc: "Architect enterprise-scale automation and AI-driven solutions for incident management, service delivery, database operations, monitoring, runbook execution, and operational knowledge discovery.",
-      descBullets: [
-        "Designed Ops-as-Self-Service automation delivering 20-35% reduction in manual effort, 25-40% faster cycle times, and 15-25% improvement in SLA adherence",
-        "Built an Incident RCA Intelligence pipeline extracting facts from Teams call transcripts to draft RCA content, reducing manual post-incident documentation",
-        "Solutioned AI-powered ticket analytics identifying recurring incidents, automation candidates, and quality issues for leadership",
-        "Designed RAG-based enterprise Q&A patterns for runbooks, operational documents, and support repositories",
-        "Managed and mentored 15+ associates on automation, GenAI adoption, and prompt engineering patterns"
-      ]
-    },
-    {
-      role: "Lead Database Architect",
-      company: "TCS Internal — Project Resource Management",
-      date: "Nov 2015 – Oct 2017",
-      desc: "Led Oracle Apps 11i reverse engineering, data model development, PL/SQL architecture, capacity planning, archiving, purging, partitioning, and information lifecycle management for enterprise systems.",
-      descBullets: [
-        "Worked directly with business users to analyze process gaps and translate functional needs into scalable database and application design components"
-      ]
-    },
-    {
-      role: "Lead ETL Developer / Senior Database Developer",
-      company: "Tata Consultancy Services Limited",
-      date: "Sep 2012 – Oct 2015",
-      desc: "Designed and built ETL integrations using Informatica PowerCenter, including PostgreSQL HR to Oracle Payroll integration, performance tuning, data quality checks, and delivery governance.",
-      descBullets: [
-        "Developed database models, reports, PL/SQL packages, procedures, functions, triggers, and optimized SQL batches for internal enterprise applications"
+      companylogo: require("./assets/images/tcs-light-logo.png"), // add require("./assets/images/tcsLogo.png") once you have a logo file
+      totalDuration: "March 2012 – Present",
+      roles: [
+        {
+          role: "Solution Architect / Product Manager",
+          date: "Nov 2017 – Present",
+          desc: "Architect enterprise-scale automation and AI-driven solutions for incident management, service delivery, database operations, monitoring, runbook execution, and operational knowledge discovery.",
+          descBullets: [
+            "Designed Ops-as-Self-Service automation delivering 20-35% reduction in manual effort, 25-40% faster cycle times, and 15-25% improvement in SLA adherence",
+            "Built an Incident RCA Intelligence pipeline extracting facts from Teams call transcripts to draft RCA content, reducing manual post-incident documentation",
+            "Solutioned AI-powered ticket analytics identifying recurring incidents, automation candidates, and quality issues for leadership",
+            "Designed RAG-based enterprise Q&A patterns for runbooks, operational documents, and support repositories",
+            "Managed and mentored 15+ associates on automation, GenAI adoption, and prompt engineering patterns"
+          ]
+        },
+        {
+          role: "Lead Database Architect — Project Resource Management",
+          date: "Nov 2015 – Oct 2017",
+          desc: "Led Oracle Apps 11i reverse engineering, data model development, PL/SQL architecture, capacity planning, archiving, purging, partitioning, and information lifecycle management for enterprise systems.",
+          descBullets: [
+            "Worked directly with business users to analyze process gaps and translate functional needs into scalable database and application design components"
+          ]
+        },
+        {
+          role: "Lead ETL Developer / Senior Database Developer",
+          date: "Sep 2012 – Oct 2015",
+          desc: "Designed and built ETL integrations using Informatica PowerCenter, including PostgreSQL HR to Oracle Payroll integration, performance tuning, data quality checks, and delivery governance.",
+          descBullets: [
+            "Developed database models, reports, PL/SQL packages, procedures, functions, triggers, and optimized SQL batches for internal enterprise applications"
+          ]
+        }
       ]
     }
   ]
 };
-
 const openSource = {
-  showGithubProfile: "true",
+  showGithubProfile: "false",
   display: true
 };
 
@@ -220,11 +222,24 @@ const resumeSection = {
   display: true
 };
 
+//const contactInfo = {
+  //title: emoji("Contact Me ☎️"),
+  //subtitle: "Open to discussing Agentic AI, RAG architecture, or enterprise automation projects",
+  //number: "+91-8052344445",
+  //email_address: "sharma.shashwat.official@gmail.com",
+  //display: true
+//};
+
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: "Open to discussing Agentic AI, RAG architecture, or enterprise automation projects",
-  number: "+91-8052344445",
-  email_address: "sharma.shashwat.official@gmail.com",
+  title: "Let's build something together",
+  subtitle:
+    "Open to discussing agentic AI, RAG architecture, or enterprise automation projects.",
+  availabilityLine:
+    "Currently a Solution Architect / Product Manager at TCS — open to Solution Architect and GenAI leadership roles.",
+  number: "", // kept blank — phone stays off the public site
+  email_address: "shashwat.shaks@gmail.com",
+  resumeLink: "/Shashwat_Sharma_Resume.pdf", // add your hosted resume PDF/Drive link here
+  scheduleLink: "https://calendly.com/sharma-shashwat-official/30min", // add your Calendly link here once you create one
   display: true
 };
 

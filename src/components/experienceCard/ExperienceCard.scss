@@ -21,74 +21,58 @@
 }
 
 .experience-banner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background: $experienceCardBannerLG;
-  border-radius: 10px 10px 0px 0px;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);
-  height: 11rem;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-.experience-blurred_div {
-  position: absolute;
-  background: $experienceCardBlurredDivLG;
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  height: 11rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-radius: 10px 10px 0px 0px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid $lightBorder1;
 }
 
 .experience-div-company {
-  position: absolute;
-  background: transparent;
-  height: 9rem;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  order: 1;
+  flex: 1;
+  min-width: 0;
 }
 
 .experience-text-company {
-  text-align: center;
-  padding: 1.5rem;
   margin: 0;
-  color: $lightBackground1;
-  font-size: 25px;
-  text-align: center;
+  color: $textColor;
+  font-size: 22px;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
+.experience-total-duration {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #fff;
+}
+
 .experience-roundedimg {
-  position: absolute;
+  order: 2;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
   object-fit: cover;
-  left: 0;
-  right: 0;
-  top: 7rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  margin-left: 16px;
+}
+
+.experience-roles-list {
+  padding: 0 20px 20px;
+}
+
+.experience-role-item {
+  padding: 16px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.experience-role-item:first-child {
+  border-top: none;
 }
 
 .experience-text-role {
@@ -100,9 +84,11 @@
   padding-top: 1.5rem;
   line-height: normal;
 }
+
 .dark-mode-text {
   color: $textColorDark !important;
 }
+
 .experience-text-date {
   text-align: center;
   color: $textColor;
@@ -129,14 +115,14 @@
     font-size: 22px;
   }
   .experience-text-company {
-    font-size: 22px;
+    font-size: 20px;
   }
   .experience-text-date {
     font-size: 18px;
   }
   .experience-roundedimg {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -145,12 +131,16 @@
     font-size: 22px;
   }
   .experience-text-company {
-    font-size: 22px;
+    font-size: 18px;
   }
   .experience-text-date {
     font-size: 18px;
   }
   .experience-text-desc {
     font-size: 16px;
+  }
+  .experience-roundedimg {
+    width: 60px;
+    height: 60px;
   }
 }
